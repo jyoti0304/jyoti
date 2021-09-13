@@ -20,10 +20,11 @@ Jest to test the APIs.
 Install Dependencies
 npm install
 Run the app
-Run in development mode
+
+#Run in development mode
 npm run devStart
 
-Run in production mode
+#Run in production mode
 npm start
 Usage
 To get the translation, we can Postman or any web browser and hit this API as follow:
@@ -43,28 +44,29 @@ We have to pass two Query Params with
 sourceText: the text you want to translate
 
 targetLanguage: the langauge to be it has to be translated
+
 NOTE:
 
 for the targetLangauge, only ISO Language code should be passed as value.
 For example:
-"hi" for Hindi
-"ja" for Japanese
-"fa" for Persian, etc.
+1) "hi" for Hindi
+2) "ja" for Japanese
+3) "fa" for Persian, etc.
 A list of all ISO Language Codes is attached here.
 
-Caching
+Caching:
 In order to avoid repeated hits to the translation API, caching of translation is done.
 
 If the HTTP method is GET then we cache the translation. first time when a unique request is made it will take actual time to fetch the response. After that it get stored in cached for some time(here in this project I use 10 seconds but can be modified as need.). Now after each time if same request is made it will get fetched from cached translation.
 
 For this I use node-cache npm package.
 
-Testing
+Testing:
 Testing on our REST API is done using jest along with supertest(which provide less complex structure to handle request.)
 
 Test cases where written to provide whether the the request return statusCode as 200.
 
-To test the APIs.
+To test the APIs.:
 # Test once on hitting this command
 npm jest
 Version: 1.0.0
