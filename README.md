@@ -20,10 +20,10 @@ Jest to test the APIs.
 Install Dependencies
 npm install
 Run the app
-# Run in development mode
+Run in development mode
 npm run devStart
 
-# Run in production mode
+Run in production mode
 npm start
 Usage
 To get the translation, we can Postman or any web browser and hit this API as follow:
