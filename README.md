@@ -30,17 +30,8 @@ Usage
 To get the translation, we can Postman or any web browser and hit this API as follow:
 
 {URL}/translate?sourceText=&targetLanguage=''
-
-# URL: (http://localhost:5000) or Deployed link
+URL: (http://localhost:5000) or Deployed link
 We have to pass two Query Params with
-
- _____________________________________
-|_______KEY_______|_______VALUE_______|
-|                 |                   |
-| sourceText      |        _          |
-|-----------------|-------------------|
-| targetLanguage  |        _          |
-|_________________|___________________|
 sourceText: the text you want to translate
 
 targetLanguage: the langauge to be it has to be translated
@@ -67,6 +58,6 @@ Testing on our REST API is done using jest along with supertest(which provide le
 Test cases where written to provide whether the the request return statusCode as 200.
 
 To test the APIs.:
-# Test once on hitting this command
+Test once on hitting this command
 npm jest
 Version: 1.0.0
